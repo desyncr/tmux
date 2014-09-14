@@ -18,6 +18,36 @@ Install
 
 * ``source-file ~/.tmux.conf`` and done!
 
+Keybindings
+----------
+
+* Splitting windows
+
+    * `Ctrl+a + \`: Vertical split
+    * `Ctrl+a + /`: Horizontal split
+
+* Moving between splits
+
+    * `Ctrl+a + [h,j,k,l]`: Move to above, left, right, and below split
+    * `Ctrl+a + o`: Rotate panels
+    * `Ctrl+a + ;`: Move to previously active panel
+
+* Resizing splits
+
+    * `Ctrl + [h,j,k,l]`: Resize current split
+
+* Working with windows
+
+    * `Ctrl+a + c`: Create a new window
+    * `Ctrl+a + [1,2,3,4,5,6,7,8,9,0]`: Move to i window
+    * `Ctrl+a + l`: Move to previously selected window
+    * `Ctrl+a +[n,p]`: Change to next or previous window
+
+* Misc
+
+    * `Ctrl+a + r`: Reload configuration
+    * `Ctrl+a + :`: Tmux command
+
 
 ## Contact and Feedback
 

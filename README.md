@@ -21,16 +21,20 @@ Install
 Keybindings
 ----------
 
+* Prefix
+
+    * ```
+
 * Splitting windows
 
-    * `Ctrl+a + \`: Vertical split
-    * `Ctrl+a + /`: Horizontal split
+    * `prefix + \`: Vertical split
+    * `prefix + /`: Horizontal split
 
 * Moving between splits
 
-    * `Ctrl+a + [h,j,k,l]`: Move to above, left, right, and below split
-    * `Ctrl+a + o`: Rotate panels
-    * `Ctrl+a + ;`: Move to previously active panel
+    * `prefix + [h,j,k,l]`: Move to above, left, right, and below split
+    * `prefix + o`: Rotate panels
+    * `prefix + ;`: Move to previously active panel
 
 * Resizing splits
 
@@ -38,15 +42,15 @@ Keybindings
 
 * Working with windows
 
-    * `Ctrl+a + c`: Create a new window
-    * `Ctrl+a + [1,2,3,4,5,6,7,8,9,0]`: Move to i window
-    * `Ctrl+a + l`: Move to previously selected window
-    * `Ctrl+a +[n,p]`: Change to next or previous window
+    * `prefix + c`: Create a new window
+    * `prefix + [1,2,3,4,5,6,7,8,9,0]`: Move to i window
+    * `prefix + l`: Move to previously selected window
+    * `prefix +[n,p]`: Change to next or previous window
 
 * Misc
 
-    * `Ctrl+a + r`: Reload configuration
-    * `Ctrl+a + :`: Tmux command
+    * `prefix + r`: Reload configuration
+    * `prefix + :`: Tmux command
 
 
 ## Contact and Feedback

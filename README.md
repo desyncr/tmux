@@ -49,6 +49,11 @@ Keybindings
     * `prefix + l`: Move to previously selected window
     * `prefix +[n,m]`: Change to previous or next window
 
+* Saving and restoring sessions
+
+    * `prefix + S`: Save current session (tmux-resurrect)
+    * `prefix + R`: Restore session
+
 * Misc
 
     * `prefix + R`: Reload tmux's configuration

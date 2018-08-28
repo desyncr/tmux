@@ -42,6 +42,10 @@ Keybindings
 
     * `prefix + [H,J,K,L]`: Resize current panel
 
+* Moving panels
+
+    * `prefix + {,}`: Move panel
+
 * Working with windows
 
     * `prefix + c`: Create a new window
@@ -59,6 +63,9 @@ Keybindings
     * `prefix + R`: Reload tmux's configuration
     * `prefix + E`: Edit tmux's configuration
     * `prefix + :`: Tmux command
+
+
+Also see: https://gist.github.com/desyncr/e767f96542ecad70a8e3d5fd006632e0
 
 ## Feedback
 

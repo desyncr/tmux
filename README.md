@@ -11,6 +11,8 @@ Install
         cd ~
         git clone git@github.com:asphxia/tmux.git .tmux
 
+* Install plugins: https://github.com/tmux-plugins/tpm
+
 * Use it:
 
         mv .tmux.conf .tmux.conf.$(date +%s) # back it up
@@ -23,33 +25,34 @@ Keybindings
 
 * Prefix
 
-    * ```
+    * `C-a`
 
 * Splitting windows
 
-    * `prefix + \`: Vertical split
-    * `prefix + /`: Horizontal split
+    * `prefix + {|,\}`: Vertical split
+    * `prefix + {-,_}`: Horizontal split
 
-* Moving between splits
+* Moving between panels
 
     * `prefix + [h,j,k,l]`: Move to above, left, right, and below split
     * `prefix + o`: Rotate panels
     * `prefix + ;`: Move to previously active panel
 
-* Resizing splits
+* Resizing panels
 
-    * `Ctrl + [h,j,k,l]`: Resize current split
+    * `prefix + [H,J,K,L]`: Resize current panel
 
 * Working with windows
 
     * `prefix + c`: Create a new window
-    * `prefix + [1,2,3,4,5,6,7,8,9,0]`: Move to i window
+    * `prefix + [1-9]`: Move to i window
     * `prefix + l`: Move to previously selected window
-    * `prefix +[n,p]`: Change to next or previous window
+    * `prefix +[n,m]`: Change to previous or next window
 
 * Misc
 
-    * `prefix + r`: Reload configuration
+    * `prefix + R`: Reload tmux's configuration
+    * `prefix + E`: Edit tmux's configuration
     * `prefix + :`: Tmux command
 
 ## Feedback

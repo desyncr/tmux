@@ -51,8 +51,8 @@ Keybindings
 
 * Saving and restoring sessions
 
-    * `prefix + S`: Save current session (tmux-resurrect)
-    * `prefix + R`: Restore session
+    * `prefix + C-s`: Save current session (tmux-resurrect)
+    * `prefix + C-r`: Restore session
 
 * Misc
 

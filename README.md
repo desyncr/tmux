@@ -6,19 +6,30 @@ My tmux configuration and settings.
 Install
 -------
 
+```
+make install
+
+```
+
+Manual install
+--------------
+
 * Clone this repo somewhere:
 
-        cd ~
-        git clone git@github.com:asphxia/tmux.git .tmux
+        git clone https://github.com/desyncr/tmux.git ~/.tmux
 
 * Install plugins: https://github.com/tmux-plugins/tpm
 
 * Use it:
 
         mv .tmux.conf .tmux.conf.$(date +%s) # back it up
-        ln -s $PWD/.tmux/.tmux.conf .tmux.conf
+        ln -s ~/.tmux/tmux.conf .tmux.conf
 
-* ``source-file ~/.tmux.conf`` and done!
+* ``prefix + :`` + ``source-file ~/.tmux.conf``
+
+* Install tpm: ``git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm``
+
+        * Install plugins: ``prefix + I``
 
 Keybindings
 ----------

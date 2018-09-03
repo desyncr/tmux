@@ -43,29 +43,28 @@ Keybindings
     * `prefix + {|,\}`: Vertical split
     * `prefix + {-,_}`: Horizontal split
 
-* Moving between panels
+* Working with panels
 
     * `prefix + [h,j,k,l]`: Move to above, left, right, and below split
-    * `prefix + o`: Rotate panels
+    * `prefix + [{,}]`: Rotate panels
     * `prefix + ;`: Move to previously active panel
-
-* Resizing panels
-
     * `prefix + [H,J,K,L]`: Resize current panel
-
-* Moving panels
-
-    * `prefix + {,}`: Move panel
+    * `prefix + !`: Break pane into a new window
+    * `:move-pane -t :3`: Move current pane to window #3
 
 * Working with windows
 
     * `prefix + c`: Create a new window
+    * `prefix + ,`: Rename window
+    * `prefix + '`: Select window index
+    * `prefix + [<,>]`: Swap windows
     * `prefix + [1-9]`: Move to i window
-    * `prefix + l`: Move to previously selected window
-    * `prefix +[n,m]`: Change to previous or next window
+    * `prefix +[p,n]`: Change to previous or next window
 
-* Saving and restoring sessions
+* Working with sessions
 
+    * `prefix + [(,)]`: Previous and next session
+    * `prefix + $`: Rename session
     * `prefix + C-s`: Save current session (tmux-resurrect)
     * `prefix + C-r`: Restore session
 
@@ -74,9 +73,12 @@ Keybindings
     * `prefix + R`: Reload tmux's configuration
     * `prefix + E`: Edit tmux's configuration
     * `prefix + :`: Tmux command
+    * `prefix + ?`: Show keybindings
 
 
 Also see: https://gist.github.com/desyncr/e767f96542ecad70a8e3d5fd006632e0
+and: https://gist.github.com/Starefossen/5955406
+and: https://gist.github.com/andreyvit/2921703
 
 ## Feedback
 

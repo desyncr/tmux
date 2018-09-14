@@ -43,13 +43,14 @@ Keybindings
     * `prefix + {|,\}`: Vertical split
     * `prefix + {-,_}`: Horizontal split
 
-* Working with panels
+* Working with panes
 
     * `prefix + [h,j,k,l]`: Move to above, left, right, and below split
-    * `prefix + [{,}]`: Rotate panels
-    * `prefix + ;`: Move to previously active panel
-    * `prefix + [H,J,K,L]`: Resize current panel
+    * `prefix + [{,}]`: Rotate panes
+    * `prefix + ;`: Move to previously active pane
+    * `prefix + [H,J,K,L]`: Resize current pane
     * `prefix + !`: Break pane into a new window
+    * `prefix + z`: Zoom current pane
     * `:move-pane -t :3`: Move current pane to window #3
 
 * Working with windows
@@ -60,13 +61,16 @@ Keybindings
     * `prefix + [<,>]`: Swap windows
     * `prefix + [1-9]`: Move to i window
     * `prefix +[p,n]`: Change to previous or next window
+    * `prefix + +`: Interactive window menu
 
 * Working with sessions
 
     * `prefix + [(,)]`: Previous and next session
+    * `prefix + =`: Interactive session menu
     * `prefix + $`: Rename session
     * `prefix + C-s`: Save current session (tmux-resurrect)
     * `prefix + C-r`: Restore session
+    * `prefix + C`: New session
 
 * Misc
 

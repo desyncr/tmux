@@ -1,4 +1,5 @@
 Windows
+    prefix + c - create window
     prefix + + - list windows
     prefix + - - new horizontal window
     prefix + _ - new horizontal window (full width)

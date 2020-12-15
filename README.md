@@ -40,7 +40,7 @@ Keybindings
     
 * Help
 
-    * `prefix + '`: Help/Cheatsheet
+    * `prefix + '`: [Help/Cheatsheet](https://raw.githubusercontent.com/desyncr/tmux/master/CHEATSHEET.md)
 
 * Splitting windows
 
@@ -61,7 +61,6 @@ Keybindings
 
     * `prefix + c`: Create a new window
     * `prefix + ,`: Rename window
-    * `prefix + '`: Select window index
     * `prefix + [<,>]`: Swap windows
     * `prefix + [1-9]`: Move to i window
     * `prefix +[p,n]`: Change to previous or next window

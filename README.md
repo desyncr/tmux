@@ -37,6 +37,10 @@ Keybindings
 * Prefix
 
     * `C-a`
+    
+* Help
+
+    * `prefix + '`: Help/Cheatsheet
 
 * Splitting windows
 

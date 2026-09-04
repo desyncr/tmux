@@ -10,9 +10,7 @@ Pane
     prefix + shift {h,j,k,l} - Resize pane
 
 General
-    prefix + [ - Visual mode
-    prefix + S + k - Scroll up
-    prefix + S + j - Scroll down
+    prefix + [ - Visual mode / copy-mode
 
 Sessions
     prefix + = - list sessions

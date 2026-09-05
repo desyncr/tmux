@@ -3,6 +3,8 @@
 
 My tmux configuration and settings.
 
+<https://www.terminal.guide/tools/multiplexer/tmux/>
+
 Install
 -------
 

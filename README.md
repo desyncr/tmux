@@ -18,7 +18,7 @@ make install
 git clone https://github.com/desyncr/tmux.git ~/.tmux
 ```
 
-* Install plugins: <https://github.com/tmux-plugins/tpm>
+* Install [tpack](https://github.com/tmuxpack/tpack): `brew install tpack`
 * Use it:
 
 ```
@@ -26,15 +26,14 @@ mv .tmux.conf .tmux.conf.$(date +%s) # back it up
 ln -s ~/.tmux/tmux.conf .tmux.conf
 ```
 
-* `prefix + :` + `source-file ~/.tmux.conf`
-* Install tpm: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+* `prefix + :` then `source-file ~/.tmux.conf`
 * Install the session picker: `mkdir -p ~/.local/bin && ln -s ~/.tmux/scripts/tmux-session-picker ~/.local/bin/tmux-session-picker`
-* Install plugins: `prefix + I`
+* Install plugins: `tpack install`
 
 ## Keybindings
 
 * Prefix
-  * `C-a`
+  * `C-b`
 * Help
   * `prefix + '`: [Help/Cheatsheet](https://raw.githubusercontent.com/desyncr/tmux/master/CHEATSHEET.md)
 * Splitting windows
@@ -63,8 +62,8 @@ ln -s ~/.tmux/tmux.conf .tmux.conf
   * `prefix + C-r`: Restore session
   * `prefix + C`: New session
 * Misc
-  * `prefix + R`: Reload tmux's configuration
-  * `prefix + E`: Edit tmux's configuration
+  * `prefix + r`: Reload tmux's configuration
+  * `prefix + e`: Edit tmux's configuration
   * `prefix + :`: Tmux command
   * `prefix + ?`: Show keybindings
 

@@ -28,6 +28,7 @@ ln -s ~/.tmux/tmux.conf .tmux.conf
 
 * `prefix + :` + `source-file ~/.tmux.conf`
 * Install tpm: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+* Install the session picker: `mkdir -p ~/.local/bin && ln -s ~/.tmux/scripts/tmux-session-picker ~/.local/bin/tmux-session-picker`
 * Install plugins: `prefix + I`
 
 ## Keybindings
@@ -56,7 +57,7 @@ ln -s ~/.tmux/tmux.conf .tmux.conf
   * `prefix + +`: Interactive window menu
 * Working with sessions
   * `prefix + [(,)]`: Previous and next session
-  * `prefix + =`: Interactive session menu
+  * `prefix + =`: Interactive session menu (excludes the active session and `tpad_` sessions)
   * `prefix + $`: Rename session
   * `prefix + C-s`: Save current session (tmux-resurrect)
   * `prefix + C-r`: Restore session

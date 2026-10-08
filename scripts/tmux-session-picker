@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -eu
+
+PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${PATH:-}"
+export PATH
+
+current_session=$(tmux display-message -p '#S')
+selection=$(
+  tmux list-sessions -F '#{session_last_attached}|#{session_name}|#{session_windows}' |
+    sort -rn |
+    awk -F '|' -v current_session="$current_session" '
+            $2 != current_session && index($2, "tpad_") != 1 {
+                printf "%-60s %s windows\n", $2, $3
+            }
+        ' |
+    fzf --cycle --layout=reverse-list --header="Current session: $current_session"
+) || exit 0
+
+[ -n "$selection" ] || exit 0
+
+tmux switch-client -t "${selection%%:*}"

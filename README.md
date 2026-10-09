@@ -30,17 +30,25 @@ ln -s ~/.tmux/tmux.conf .tmux.conf
 * Install the session picker: `mkdir -p ~/.local/bin && ln -s ~/.tmux/scripts/tmux-session-picker ~/.local/bin/tmux-session-picker`
 * Install plugins: `tpack install`
 
+## Per-machine settings
+
+Machine-specific overrides live in `~/.tmux/local.conf` (git-ignored, sourced
+by `tmux.conf` before plugins load). Copy `local.conf.example` to get started.
+
+* `@tpad-ai-cmd`: agent launched by `prefix + C-a` (`copilot` by default, `claude` for work)
+* ccmux bindings (`prefix + b/B`, `M-P`) are only added when `ccmux` is installed
+
 ## Keybindings
 
 * Prefix
   * `C-b`
 * Help
-  * `prefix + '`: [Help/Cheatsheet](https://raw.githubusercontent.com/desyncr/tmux/master/CHEATSHEET.md)
+  * `prefix + '`: fzf cheatsheet popup (`CHEATSHEET.md`)
 * Splitting windows
   * `prefix + {|,\}`: Vertical split
   * `prefix + {-,_}`: Horizontal split
 * Working with panes
-  * `prefix + [h,j,k,l]`: Move to above, left, right, and below split
+  * `prefix + [h,j,k,l]`: Move to left, below, above, and right pane
   * `prefix + [{,}]`: Rotate panes
   * `prefix + ;`: Move to previously active pane
   * `prefix + [H,J,K,L]`: Resize current pane

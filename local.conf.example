@@ -1,0 +1,8 @@
+# Per-machine overrides. Copy to ~/.tmux/local.conf (git-ignored):
+#   cp ~/.tmux/local.conf.example ~/.tmux/local.conf
+
+# AI agent launched by prefix + C-a (default: copilot)
+set -g @tpad-ai-cmd "claude"
+
+# Host-based alternative, e.g. in a shared local.conf:
+# if-shell '[ "$(hostname -s)" = "work-laptop" ]' 'set -g @tpad-ai-cmd "claude"'

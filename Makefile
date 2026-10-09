@@ -11,7 +11,7 @@ all: help
 
 check-tpack:
 	@command -v "${TPACK}" >/dev/null || { \
-		echo "tpack is required; install it with 'brew install tpack'."; \
+		echo "tpack is required; install it with 'brew install tmuxpack/tpack/tpack'."; \
 		exit 1; \
 	}
 

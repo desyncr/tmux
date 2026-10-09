@@ -18,7 +18,7 @@ make install
 git clone https://github.com/desyncr/tmux.git ~/.tmux
 ```
 
-* Install [tpack](https://github.com/tmuxpack/tpack): `brew install tpack`
+* Install [tpack](https://github.com/tmuxpack/tpack): `brew install tmuxpack/tpack/tpack`
 * Use it:
 
 ```

@@ -10,7 +10,7 @@ selection=$(
   tmux list-sessions -F '#{session_last_attached}|#{session_name}|#{session_windows}' |
     sort -rn |
     awk -F '|' -v current_session="$current_session" '
-            $2 != current_session && index($2, "tpad_") != 1 {
+            $2 != current_session && index($2, "tpad_") != 1 && index($2, "scratch") != 1 {
                 printf "%-60s %s windows\n", $2, $3
             }
         ' |
@@ -19,4 +19,4 @@ selection=$(
 
 [ -n "$selection" ] || exit 0
 
-tmux switch-client -t "${selection%%:*}"
+tmux switch-client -t "${selection%% *}"
